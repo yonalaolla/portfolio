@@ -354,9 +354,10 @@ section {
       font-size: 1.7em; }
 
   #portfolioList h3 {
-    transform: scale(0.9);
+    transform: scale(0.8);
+    transform-origin: left top;
     top: 0.5em;
-    left: 0; }
+    left: 0.24em; }
     #portfolioList h3 span {
       margin-left: -8px; }
   #portfolioList a[class^="btn"] {
@@ -380,11 +381,12 @@ section {
       font-size: 1.3em; }
 
   #portfolioList h3 {
-    transform: scale(0.7);
-    transform-origin: left top;
+    transform: scale(0.6);
     left: 0.2em;
     top: 0.3em; }
   #portfolioList a[class^="btn"] {
     transform: scale(0.7); }
   #portfolioList .listArea {
-    margin-top: -14%; } }
+    margin-top: -14%; }
+  #portfolioList .list {
+    margin-top: 14.5%; } }
