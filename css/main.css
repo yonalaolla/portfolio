@@ -259,7 +259,7 @@ section {
     width: 70vmax;
     height: 70vmax;
     position: absolute;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
     left: -20vmin;
     top: -20vmin;
     animation: morph 15s linear infinite alternate, spin 20s linear infinite;
