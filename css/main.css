@@ -90,7 +90,7 @@ section {
 
 #visual {
   height: 100vh;
-  background: #f7728e url("../img/visual_01.png") 50% 50% no-repeat;
+  background: #db8892 url("../img/visual_01.png") 50% 50% no-repeat;
   background-size: cover;
   padding-top: 9%;
   background-attachment: fixed;
