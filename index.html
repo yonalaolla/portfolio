@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="포트폴리오">
+  <meta name="description" content="웹디자이너 개인 포트폴리오 페이지입니다.">
+  <meta name="author" content="날아올라">
+  <meta name="format-detection" content="telephone=no">
+  <title>날아올라 포트폴리오</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* .swiper-container {
+      width: 100%;
+      height: 100%;
+    } */
+    .swiper-slide {
+      text-align: center;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/libs/jquery.easing.1.3.js"></script>
+</head>
+<body>
+  <main role="main">
+    <h1 class="blind">포트폴리오</h1>
+    <!-- <section id="mainVisual">
+      <h2 class="blind">비주얼 이미지</h2>
+      <div class="txtArea">
+        <p class="txt1">PORTFOLIO<span>---</span></p>
+        <p class="txt2">HERE’S A</p>
+        <p class="txt3">
+          <svg version="1.1" id="web" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="480px" height="211px" viewBox="0 0 480 211" style="enable-background:new 0 0 480 211;" xml:space="preserve">
+            <g>
+              <path style="fill:none;stroke:#F8EAE0;stroke-width:3;" d="M181.15,24L146.8,129h-26.1L97.6,57.9L73.75,129H47.8L13.3,24h25.2
+                l23.7,73.8L86.95,24h22.5l24,74.4L157.9,24H181.15z"/>
+              <path style="fill:none;stroke:#F8EAE0;stroke-width:3;" d="M275.949,109.5V129h-81.3V24h79.35v19.5h-55.2v22.8h48.75v18.9h-48.75
+                v24.3H275.949z"/>
+              <path style="fill:none;stroke:#F8EAE0;stroke-width:3;" d="M386.498,83.925c3.398,4.451,5.1,9.926,5.1,16.425
+                c0,9.202-3.576,16.275-10.725,21.226c-7.151,4.95-17.576,7.425-31.275,7.425h-54.3V24h51.3c12.799,0,22.624,2.452,29.475,7.35
+                c6.849,4.901,10.275,11.55,10.275,19.95c0,5.1-1.226,9.652-3.675,13.65c-2.452,4.001-5.876,7.15-10.275,9.45
+                C378.397,76.301,383.097,79.477,386.498,83.925z M319.447,42.3v24.75h24.15c6,0,10.549-1.05,13.65-3.15
+                c3.098-2.1,4.649-5.198,4.649-9.3c0-4.099-1.552-7.174-4.649-9.225c-3.102-2.048-7.65-3.075-13.65-3.075H319.447z M362.272,107.55
+                c3.249-2.1,4.875-5.349,4.875-9.75c0-8.7-6.45-13.05-19.35-13.05h-28.351v25.95h28.351
+                C354.196,110.7,359.021,109.65,362.272,107.55z"/>
+            </g>
+          </svg>
+          <span>DESIGNER</span></p>
+      </div>
+    </section> -->
+    <section class="section" id="visual">
+      <h2 class="blind">비주얼 이미지</h2>
+      <div class="textArea">
+        <p class="first">
+          <span>이</span>
+          <span>렇</span>
+          <span>게</span>
+          <span class="em">멋</span>
+          <span class="em">진</span>
+        </p>
+        <p class="second">
+          <span>날</span>
+          <span>개</span>
+          <span>를</span>
+          <span class="double">펴</span>
+        </p>
+        <p class="third">
+          <span class="em">꿈</span>
+          <span>을</span>
+          <span>꾸</span>
+          <span>어</span>
+          <span>요</span>
+        </p>
+        <p class="fourth">
+          <span>난</span>
+          <span class="em">날</span>
+          <span class="em">아</span>
+          <span class="em">올</span>
+          <span class="em">라</span>
+        </p>
+      </div>
+      <a href="#portfolioList" class="btn_scroll">
+        <span>scroll</span>
+        <em></em>
+        <!-- <span class="blind">포트폴리오 목록으로 이동</span> -->
+      </a>
+    </section>
+    <section id="portfolioList">
+      <h2 class="blind">포트폴리오 목록</h2>
+      <h3>
+          <svg version="1.1" id="port" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="374px" height="90px" viewBox="0 0 374 90" style="enable-background:new 0 0 374 90;" xml:space="preserve">
+        <path style="fill:none;stroke:#F7728E;" d="M54.32,5.816c5.114,2.315,9.053,5.6,11.816,9.856c2.762,4.256,4.145,9.296,4.145,15.12
+          c0,5.751-1.383,10.771-4.145,15.063c-2.763,4.295-6.702,7.58-11.816,9.856c-5.115,2.278-11.144,3.416-18.088,3.416H20.44v21.616
+          H2.296v-78.4h33.936C43.176,2.344,49.205,3.502,54.32,5.816z M47.656,40.816c2.837-2.352,4.256-5.693,4.256-10.024
+          c0-4.405-1.419-7.784-4.256-10.136c-2.838-2.352-6.982-3.528-12.432-3.528H20.44v27.216h14.784
+          C40.673,44.344,44.817,43.168,47.656,40.816z"/>
+        <path style="fill:none;stroke:#F7728E;" d="M109.919,76.824c-6.534-3.509-11.647-8.344-15.344-14.504s-5.544-13.085-5.544-20.776
+          c0-7.689,1.848-14.616,5.544-20.776s8.81-10.994,15.344-14.504C116.452,2.755,123.788,1,131.927,1
+          c8.138,0,15.456,1.755,21.952,5.264c6.496,3.51,11.609,8.344,15.344,14.504c3.733,6.16,5.601,13.086,5.601,20.776
+          c0,7.691-1.867,14.616-5.601,20.776c-3.734,6.16-8.848,10.995-15.344,14.504c-6.496,3.51-13.814,5.264-21.952,5.264
+          C123.788,82.088,116.452,80.334,109.919,76.824z M144.471,63.439c3.733-2.127,6.664-5.096,8.792-8.903s3.192-8.138,3.192-12.992
+          c0-4.853-1.064-9.184-3.192-12.992s-5.059-6.776-8.792-8.904c-3.734-2.128-7.915-3.192-12.544-3.192
+          c-4.63,0-8.811,1.064-12.544,3.192c-3.734,2.128-6.664,5.096-8.792,8.904s-3.191,8.139-3.191,12.992
+          c0,4.854,1.063,9.185,3.191,12.992s5.058,6.776,8.792,8.903c3.733,2.129,7.914,3.193,12.544,3.193
+          C136.556,66.633,140.736,65.568,144.471,63.439z"/>
+        <path style="fill:none;stroke:#F7728E;" d="M250.119,80.744l-15.12-21.84h-0.896h-15.792v21.84h-18.145v-78.4h33.937
+          c6.943,0,12.973,1.158,18.088,3.472c5.113,2.315,9.053,5.6,11.815,9.856c2.762,4.256,4.145,9.296,4.145,15.12
+          c0,5.824-1.4,10.847-4.2,15.063c-2.8,4.22-6.776,7.449-11.928,9.688l17.584,25.2H250.119z M245.527,20.656
+          c-2.839-2.352-6.982-3.528-12.433-3.528h-14.783v27.328h14.783c5.45,0,9.594-1.193,12.433-3.584
+          c2.837-2.389,4.256-5.749,4.256-10.08C249.783,26.387,248.364,23.008,245.527,20.656z"/>
+        <path style="fill:none;stroke:#F7728E;" d="M314.286,17.128h-25.088V2.344h68.319v14.784H332.43v63.616h-18.144V17.128z"/>
+        </svg>
+  
+      <span>FOLIO</span>
+      </h3>
+      <div class="listArea swiper-container">
+        <div id="thumbList" class="swiper-container">
+          <a href="#" class="btn_prev swiper-button-prev"><span class="blind">이전</span></a>
+          <a href="#" class="btn_next swiper-button-next"><span class="blind">다음</span></a>
+          <ul class="list swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="portfolio/1.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_1.png" alt="2018 기능경기대회 시안"></p>
+                <p class="tit">2018 기능경기대회 시안</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/2.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_2.png" alt="대구소프트웨어고등학교 메신저 앱"></p>
+                <p class="tit">대구소프트웨어고등학교 메신저 앱</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/3.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_3.png" alt="대구소프트웨어고등학교 메신저 PC형"></p>
+                <p class="tit">대구소프트웨어고등학교 메신저 PC형</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/4.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_4.png" alt="영천시청 대표포털 시안"></p>
+                <p class="tit">영천시청 대표포털 시안</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/5.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_5.png" alt="창원시청 포털 시안"></p>
+                <p class="tit">창원시청 포털 시안</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/8.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_8.png" alt="대구 국제뮤지컬 페스티벌 리뉴얼"></p>
+                <p class="tit">대구 국제뮤지컬 페스티벌 리뉴얼</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/7.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_7.png" alt="광주시청 대표포털 시안"></p>
+                <p class="tit">광주시청 대표포털 시안</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/9.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_9.png" alt="평택소풍정원캠핑장 메인 시안"></p>
+                <p class="tit">평택소풍정원캠핑장 메인 시안</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/6.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_6.png" alt="문경시청 메인 시안"></p>
+                <p class="tit">문경시청 메인 시안</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/10.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_10.png" alt="안동문화예술의전당"></p>
+                <p class="tit">안동문화예술의전당</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/11.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_11.png" alt="디지털 자산관리"></p>
+                <p class="tit">디지털 자산관리</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/12.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_12.png" alt="아이러브맘카페 시안"></p>
+                <p class="tit">아이러브맘카페 시안</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/13.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_13.png" alt="대구기계부품연구원 메인 시안"></p>
+                <p class="tit">대구기계부품연구원 메인 시안</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/24.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_24.png" alt="신한금융투자 대시보드"></p>
+                <p class="tit">신한금융투자 대시보드</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/14.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_14.png" alt="의정부시 포털 메인"></p>
+                <p class="tit">의정부시 포털 메인</p>
+              </a>
+            </li>  
+            <li class="swiper-slide">
+              <a href="portfolio/15.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_15.png" alt="원자력환경공단 메인 시안"></p>
+                <p class="tit">원자력환경공단 메인 시안</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/18.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_17.png" alt="에듀나비 티칭포트폴리오 클라우드"></p>
+                <p class="tit">에듀나비 티칭포트폴리오 클라우드</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/17.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_17_.png" alt="에듀나비 교수학습지원센터 리뉴얼"></p>
+                <p class="tit">에듀나비 교수학습지원센터 리뉴얼</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="portfolio/19.html" target="_blank" title="새창열림">
+                  <p class="imgBox"><img src="img/thumb/thumb_19.png" alt="대구글로벌교육센터 CI"></p>
+                  <p class="tit">대구글로벌교육센터 CI</p>
+                </a>
+              </li>
+            <li class="swiper-slide">
+              <a href="portfolio/16.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_16.png" alt="내친구교육넷 교수학습"></p>
+                <p class="tit">내친구교육넷 교수학습</p>
+              </a>
+            </li> 
+            
+            <li class="swiper-slide">
+              <a href="portfolio/20.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_20.png" alt="학교홈페이지 리플릿"></p>
+                <p class="tit">학교홈페이지 리플릿</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/21.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_21.png" alt="한국섬유개발연구원 시안"></p>
+                <p class="tit">한국섬유개발연구원 시안</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/22.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_22.png" alt="한국섬유개발연구원 ARCHITEX 시안"></p>
+                <p class="tit">한국섬유개발연구원 ARCHITEX 시안</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="portfolio/23.html" target="_blank" title="새창열림">
+                <p class="imgBox"><img src="img/thumb/thumb_23.png" alt="한국섬유개발연구원 TEXTOPIA 메인 시안"></p>
+                <p class="tit">한국섬유개발연구원 TEXTOPIA 메인 시안</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+  <script src="js/libs/swiper.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      // spaceBetween: 30,
+      // slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
