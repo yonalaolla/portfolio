@@ -249,7 +249,7 @@ section {
         overflow: hidden; }
         #portfolioList .list li .imgBox img {
           transition: 1s;
-          opacity: 0.5; }
+          opacity: 0.7; }
       #portfolioList .list li a:hover img {
         transform: scale(1.2); }
       #portfolioList .list li a:hover img, #portfolioList .list li a:hover .tit {
@@ -259,7 +259,13 @@ section {
     width: 70vmax;
     height: 70vmax;
     position: absolute;
-    background: rgba(0, 0, 0, 0.15);
+    background: #FC5C7D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.3;
     left: -20vmin;
     top: -20vmin;
     animation: morph 15s linear infinite alternate, spin 20s linear infinite;
