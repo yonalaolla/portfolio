@@ -11,7 +11,7 @@ $(document).ready(function(){
       // 애니메이션으로 stroke-offset을 0으로 가깝게 이동시킨다.
       $(path).animate({
         "strokeDashoffset" : 0
-      }, 1500);
+      }, 2000);
     });
   }, 5000);
 });
