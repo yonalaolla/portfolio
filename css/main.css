@@ -96,8 +96,6 @@ section {
   height: 100vh;
   background: #ed8493 url("../img/visual_01.png") 50% 50% no-repeat;
   background-size: cover;
-  padding-top: 9%;
-  background-attachment: fixed;
   overflow: hidden; }
   #visual .btn_scroll {
     display: block;
