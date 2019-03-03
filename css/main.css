@@ -89,6 +89,10 @@ section {
   height: 100vh; }
 
 #visual {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 100vh;
   background: #ed8493 url("../img/visual_01.png") 50% 50% no-repeat;
   background-size: cover;
@@ -188,6 +192,7 @@ section {
     animation-delay: 1.05s; }
 
 #portfolioList {
+  margin-top: 100vh;
   position: relative;
   overflow: hidden;
   background: #FC466B;
