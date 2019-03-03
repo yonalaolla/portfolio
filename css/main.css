@@ -90,7 +90,7 @@ section {
 
 #visual {
   height: 100vh;
-  background: #db8892 url("../img/visual_01.png") 50% 50% no-repeat;
+  background: #ed8493 url("../img/visual_01.png") 50% 50% no-repeat;
   background-size: cover;
   padding-top: 9%;
   background-attachment: fixed;
@@ -131,9 +131,7 @@ section {
     color: #fff;
     width: 1.5em;
     font-size: 2.1em;
-    animation-name: upto;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
+    animation: upto 1s ease-out; }
     .textArea span:nth-child(2) {
       margin-left: 2em;
       animation-name: upto1; }
@@ -192,7 +190,9 @@ section {
 #portfolioList {
   position: relative;
   overflow: hidden;
-  background: #2a2834; }
+  background: #FC466B;
+  background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
+  background: linear-gradient(to right, #3F5EFB, #FC466B); }
   #portfolioList h3 {
     position: absolute;
     left: 1em;
@@ -249,8 +249,7 @@ section {
         overflow: hidden; }
         #portfolioList .list li .imgBox img {
           transition: 1s;
-          opacity: 0.5;
-          filter: grayscale(1); }
+          opacity: 0.7; }
       #portfolioList .list li a:hover img {
         transform: scale(1.2);
         filter: none; }
@@ -262,12 +261,9 @@ section {
     height: 70vmax;
     position: absolute;
     background: #FC5C7D;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #6A82FB, #FC5C7D);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    opacity: 0.3;
+    opacity: 0.4;
     left: -20vmin;
     top: -20vmin;
     animation: morph 15s linear infinite alternate, spin 20s linear infinite;
