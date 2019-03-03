@@ -102,7 +102,7 @@ section {
   #visual .btn_scroll {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 21px;
     left: 50%;
     transform: translateX(-50%); }
     #visual .btn_scroll span {
